@@ -20,17 +20,21 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
     /*grid-template-columns: 200px auto;*/
     /*grid-row-gap: 2vw;*/
     /*grid-auto-flow: column;*/
 }
 .header div a{
     text-align: center;
-    padding: 15px 75px 15px 75px;
+    /*padding: 15px 75px 15px 75px;*/
+    padding: 1vw 4vw 1vw 3vw;
     display: block;
     color: #FFF9D0;
-    font-size: 25px;
-    line-height: 14px;
+    font-size: 2vw;
+    line-height: 1vw;
     text-decoration: none;
     text-transform: uppercase;
     border-right: 1px solid #F5F5DC;
@@ -54,7 +58,8 @@ footer{
 .header div ul a{
     text-align: center;
     text-transform: none;
-    padding: 15px 75px 15px 64px;
+    /*padding: 15px 75px 15px 64px;*/
+    padding: 1vw 4vw 1vw 3vw;
     border-bottom: 1px solid #F5F5DC;
 }
 .header div:hover > ul{
@@ -70,11 +75,14 @@ footer{
 .header div{
     position: relative;
 }
+.header div a{
+    position: relative;
+}
 .header_img{
     position: absolute;
     width: 10%;
-    top: 6px;
-    left: 40px;
+    top: 0.5vw;
+    left: 1vw;
 }
 .header div:hover img{
     transform: scale(1.1);
@@ -126,10 +134,18 @@ footer{
     object-fit: cover;
     width: 100%;
     border-radius: 10px;
-
-
 }
-
+.pop-store-menu__image{
+    position: relative;
+}
+.pop-store-menu__effects{
+    position: absolute;
+    border-radius: 10px;
+    bottom: 4px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
 .pop-store-menu__product-info h3{
     font-size: 18px;
     font-family: Avenir, sans-serif;
@@ -173,6 +189,9 @@ footer{
     main section pre{
         display: none;
     }
+    .header{
+        padding-bottom: 6vw;
+    }
 }
 /*Support FAQ*/
 .faq{
@@ -198,4 +217,8 @@ footer{
     grid-area: aq;
     display: grid;
     grid-template-rows: repeat(2, 50%) ;
+}
+
+main section h1 {
+    font-size: 1.3vw;
 }
