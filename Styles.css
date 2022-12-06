@@ -1,0 +1,224 @@
+main{
+    margin-top: 10px;
+}
+
+body{
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1vw;
+    font-weight:bold;
+}
+
+/*MENU*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    /*grid-template-columns: 200px auto;*/
+    /*grid-row-gap: 2vw;*/
+    /*grid-auto-flow: column;*/
+}
+.header div a{
+    text-align: center;
+    /*padding: 15px 75px 15px 75px;*/
+    padding: 1vw 4vw 1vw 3vw;
+    display: block;
+    color: #FFF9D0;
+    font-size: 2vw;
+    line-height: 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 1px solid #F5F5DC;
+    border-left: 1px solid #F5F5DC;
+    background-color: #911E42;
+    transition: all 0.2s;
+}
+.header div a:hover{
+    background-color: #741835;
+    color: #ffffd0;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.2s;
+}
+.header div ul{
+    position: absolute;
+    min-width: 150px;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #F5F5DC;
+}
+.header div ul a{
+    text-align: center;
+    text-transform: none;
+    /*padding: 15px 75px 15px 64px;*/
+    padding: 1vw 4vw 1vw 3vw;
+    border-bottom: 1px solid #F5F5DC;
+}
+.header div:hover > ul{
+    display: inherit;
+}
+.header div ul{
+    display: none;
+}
+.header div ul li{
+    display: grid;
+    position: relative;
+}
+.header div{
+    position: relative;
+}
+.header div a{
+    position: relative;
+}
+.header_img{
+    position: absolute;
+    width: 10%;
+    top: 0.5vw;
+    left: 1vw;
+}
+.header div:hover img{
+    transform: scale(1.1);
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem black);
+}
+.index{
+    font-family: "Calluna", sans-serif;
+}
+.index:hover{
+}
+
+.market{
+    font-family: "Calluna", sans-serif;
+}
+.market:hover{
+
+}
+
+.Support{
+    font-family: "Calluna", sans-serif;
+}
+.Support:hover{
+
+}
+
+.TradeGuide{
+    font-family: "Calluna", sans-serif;
+}
+.TradeGuide:hover{
+
+}
+
+/*Popular products store menu*/
+.pop-store-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    background-color: #585858;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.pop-store-menu__product{
+    position: relative;
+    padding: 20px;
+}
+.pop-store-menu__image img{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.pop-store-menu__image{
+    position: relative;
+}
+.pop-store-menu__effects{
+    position: absolute;
+    border-radius: 10px;
+    bottom: 4px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+.pop-store-menu__product-info h3{
+    font-size: 18px;
+    font-family: Avenir, sans-serif;
+    position: absolute;
+    top: 145px;
+    left: 35px;
+    color: #fff;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+.pop-store-menu__product-info h4{
+    font-size: 15px;
+    font-family: Avenir, sans-serif;
+    position: absolute;
+    top: 155px;
+    left: 35px;
+    color: #6b3ac6;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+.pop-store-menu__product-price{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    padding-left: 110px;
+}
+
+.pop-store-menu__product-price span{
+    font-size: 22px;
+}
+.pop-store-menu__add-to-card button{
+    border: none;
+}
+
+/*@media*/
+@media screen and (max-height: 1270px){
+    main section pre{
+        display: none;
+    }
+    .header{
+        padding-bottom: 6vw;
+    }
+}
+/*Support FAQ*/
+.faq{
+    display: grid;
+    grid-template-areas:
+    ". faq"
+    "number aq";
+}
+.cell{
+    border: 1px solid black;
+}
+.faq__number{
+    grid-area: number;
+}
+.h5{
+    grid-area: faq;
+}
+.faq{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.faq__object{
+    grid-area: aq;
+    display: grid;
+    grid-template-rows: repeat(2, 50%) ;
+}
+
+main section h1 {
+    font-size: 1.3vw;
+}

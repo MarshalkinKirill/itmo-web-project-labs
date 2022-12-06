@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>DOKATrade</title>
-    <link href = "Styles.css">
-    <!--<link href="outline-prototype/outline-prototype-lebel.css" rel="stylesheet">-->
+    <link href = "Styles.css" rel="stylesheet">
+<!--    <link href="outline-prototype/outline-prototype-lebel.css" rel="stylesheet">-->
 </head>
 <body>
     <header>
-        <div id = 'header'>
-            <div><a class = index href = "index.html">DOKATrade</a></div>
+        <div id = 'header' class="header">
+            <div><a  class = index href = "index.html"><img class = header_img src = "imgs/d2_icon.png">DOKATrade</a></div>
             <div>
                 <a class = market href = "index.html">Market</a>
                 <ul>
@@ -19,11 +19,10 @@
                     <li><a class = market href = "Pages/Other.html">Other</a></li>
                 </ul>
             </div>
-            <div><a class = Support href = "index.html">Support</a></div>
+            <div><a class = Support href = "Pages/Support.html">Support</a></div>
             <div><a class = TradeGuide href = "index.html">TradeGuide</a></div>
         </div>
     </header>
-
     <main>
         <section><h1>Торговая площадка DOKATRADE</h1></section>
 
@@ -38,15 +37,100 @@
 　　　　| l　　 　｀ ｰｰ -‐''ゝ､,,)).   .. ·.¸.·
 　　　 　ヽ.ー─'´)　
         </pre></section>
-        <section><strong style="font-size:1vw;"><h2>Редкие предметы, которые вы можете приобрести у нас</h2></strong></section>
+        <section><strong style="font-size:1vw;"><h2 style="padding-left: 2vw;">Редкие предметы, которые вы можете приобрести у нас</h2></strong></section>
 
-        <div class = "gallery">
-            <div><p class = picture>###</p><img src = "###"></div>
-            <div><p class = picture>###</p><img src = "###"></div>
-            <div><p class = picture>###</p><img src = "###"></div>
-            <div><p class = picture>###</p><img src = "###"></div>
-            <div><p class = picture>###</p><img src = "###"></div>
+        <div class = "pop-store-menu">
+<!--            <div><p class = picture>Fortified Fabricator</p><img src = "imgs/Fortified_Fabricator_icon.png" alt="fortified fabricator img"></div>-->
+<!--            <div><p class = picture>Diabolical Fiend</p><img src = "imgs/Diabolical_Fiend_icon.png" alt="diabolical fiend img"></div>-->
+<!--            <div><p class = picture>Indomitable Legacy</p><img src = "imgs/Indomitable_Legacy_icon.png" alt="indomitable legacy img"></div>-->
+<!--            <div><p class = picture>Gothic Whisper</p><img src = "imgs/Gothic_Whisper_icon.png" alt="gothic whisper img"></div>-->
+<!--            <div><p class = picture>###</p><img src = "imgs/Diabolical_Fiend_icon.png" alt="diabolical fiend img"></div>-->
+            <div class="pop-store-menu__product">
 
+
+
+                <div class="pop-store-menu__image">
+                    <img src = "imgs/Fortified_Fabricator_icon.png" alt="fortified fabricator img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Fortified Fabricator</h3>
+                    <h4><sub>Collector's Cache 2016</sub></h4>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">120<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "imgs/Diabolical_Fiend_icon.png" alt="diabolical fiend img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Diabolical Fiend</h3>
+                    <h4><sub>Collector's Cache 2018</sub></h4>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">90<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "imgs/Indomitable_Legacy_icon.png" alt="indomitable legacy img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Indomitable Legacy</h3>
+                    <h4><sub>Collector's Cache 2020</sub></h4>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">60<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "imgs/Gothic_Whisper_icon.png" alt="gothic whisper img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Gothic Whisper</h3>
+                    <h4><sub>Collector's Cache || 2019</sub></h4>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">90<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "imgs/Knight_of_the_Burning_Scale_icon.png" alt="knight of the burning scale img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Knight of the Burning Scale</h3>
+                    <h4><sub>Collector's Cache 2015</sub></h4>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">170<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
         </div>
         <br>
         <section><strong style="font-size:2vw;" class  = quote><sub><cite>DOKATrade</cite> - <q>Good trade is a fast trade</q></sub></strong></section>
