@@ -193,6 +193,15 @@ footer{
         padding-bottom: 6vw;
     }
 }
+/*@media*/
+@media screen and (max-height: 1270px){
+    main section pre{
+        display: none;
+    }
+    .header{
+        padding-bottom: 6vw;
+    }
+}
 /*Support FAQ*/
 .faq{
     display: grid;
