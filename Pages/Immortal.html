@@ -3,32 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <title>Immortal</title>
+    <link href = "../Styles.css" rel="stylesheet">
+    <script src = ../js/current_page.js></script>
+    <script src = ../js/load_time.js></script>
+<!--    <link href="../outline-prototype/outline-prototype-lebel.css" rel="stylesheet">-->
+
 </head>
 <body>
     <header>
-        <div id = 'header'>
-            <div><a class = index href = "../index.html">DOKATrade</a></div>
+        <div id = 'header' class="header">
+            <div><a  class = index href = "../index.html"><img class = header_img src = "../imgs/d2_icon.png">DOKATrade</a></div>
             <div>
                 <a class = market href = "../index.html">Market</a>
                 <ul>
                     <li><a class = market href = "Immortal.html">Immortal</a></li>
-                    <li><a class = market href = "OnlyTrade.html">OnlyTrade</a></li>
-                    <li><a class = market href = "Sets.html">Sets</a></li>
+                    <li><a class = market href = "Arcana.html">Sets</a></li>
                     <li><a class = market href = "Other.html">Other</a></li>
                 </ul>
             </div>
             <div><a class = Support href = "Support.html">Support</a></div>
-            <div><a class = TradeGuide href = "TradeGuide.html">TradeGuide</a></div>
+            <div><a class = TradeGuide href = "../index.html">TradeGuide</a></div>
         </div>
     </header>
 
     <main>
+        <div class = "market-menu">
+            <div class="market-menu__object">
+                <div class = "market-menu__immortal">
+                <a href = "Immortal.html">Immortal</a></div>
 
+            </div>
+            <div class="market-menu__object">
+                <div class = "market-menu__sets" >
+                <a href = "Arcana.html">Arcana</a></div>
+            </div>
+            <div class="market-menu__object">
+                <div class = "market-menu__other">
+                <a href = "Other.html">Other</a></div>
+            </div>
+        </div>
+        <div class = "pop-store-menu">
+
+            <div class="pop-store-menu__product">
+
+
+
+                <div class="pop-store-menu__image">
+                    <img src = "../imgs/immortal/immortal_drow_1_icon.png" alt="Silent Wake img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Silent Wake</h3>
+                    <h6><sub>Immortal</sub></h6>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">10<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="../imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "../imgs/immortal/immortal_necr_2_icon.png" alt="diabolical fiend img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Sullen Hollow</h3>
+                    <h6><sub>Immortal</sub></h6>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">9<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="../imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "../imgs/immortal/immortal_sf_3_icon.png" alt="Arms of Desolation img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Arms of Desolation</h3>
+                    <h6><sub>Immortal</sub></h6>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">6.5<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="../imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "../imgs/immortal/immortal_invo_4_icon.png" alt="Magus Accord img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Magus Accord</h3>
+                    <h6><sub>Immortal</sub></h6>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">9<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="../imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+
+            <div class="pop-store-menu__product">
+
+                <div class="pop-store-menu__image">
+                    <img src = "../imgs/immortal/immortal_pet_5_icon.png" alt="Almond the Frondillo img">
+                    <div class="pop-store-menu__effects"></div>
+                </div>
+
+                <div class="pop-store-menu__product-info">
+                    <h3>Almond the Frondillo</h3>
+                    <h6><sub>Immortal</sub></h6>
+                </div>
+                <div class="pop-store-menu__product-price">
+                    <span class="pop-store-menu__product-price">3.5<small>$</small></span>
+                    <button class="pop-store-menu__add-to-card"><img src="../imgs/shopping_bag_icon.png"></button>
+                </div>
+            </div>
+        </div>
     </main>
 
 
     <footer>
-
+        <p>Контактная почта:</p>
+        <p class = gmail>dokatrade.support@gmail.com</p>
+        <script>
+            window.addEventListener("load", () => {
+                document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c"
+                let str = window.location.href
+                disable(str.substr(str.lastIndexOf('/') + 1))
+            })
+        </script>
+        <p id="demo">Время загрузки страницы:</p>
     </footer>
 
 
