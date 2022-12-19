@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>TradeGuide</title>
+    <link href = "../Styles.css" rel="stylesheet">
+    <script src = ../js/current_page.js></script>
+    <script src = ../js/load_time.js></script>
+<!--    <link href="../outline-prototype/outline-prototype-lebel.css" rel="stylesheet">-->
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../js/page_showcase.js"></script>
 </head>
 <body>
     <header>
-        <div id = 'header'>
-            <div><a class = index href = "../index.html">DOKATrade</a></div>
+        <div id = 'header' class="header">
+            <div><a  class = index href = "../index.html"><img class = header_img src = "../imgs/d2_icon.png">DOKATrade</a></div>
             <div>
-               <a class = market href = "../index.html">Market</a>
+                <a class = market href = "../index.html">Market</a>
                 <ul>
                     <li><a class = market href = "Immortal.html">Immortal</a></li>
-                    <li><a class = market href = "OnlyTrade.html">OnlyTrade</a></li>
-                    <li><a class = market href = "Sets.html">Sets</a></li>
+                    <li><a class = market href = "Arcana.html">Sets</a></li>
                     <li><a class = market href = "Other.html">Other</a></li>
                 </ul>
             </div>
@@ -23,12 +35,30 @@
     </header>
 
     <main>
+        <div class="demo__item">
 
+
+            <div class="demo__body">
+                <input id="example_2" type="text" name="" value="" />
+            </div>
+
+            <div class="demo__inputs">
+                <input id="example_2_input_from" class="demo__input" value="0">
+                <input id="example_2_input_to" class="demo__input" value="0"> ← try edit this fields
+            </div>
+        </div>
     </main>
-
-
     <footer>
-
+        <p>Контактная почта:</p>
+        <p class = gmail>dokatrade.support@gmail.com</p>
+        <script>
+            window.addEventListener("load", () => {
+                document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c"
+                let str = window.location.href
+                disable(str.substr(str.lastIndexOf('/') + 1))
+            })
+        </script>
+        <p id="demo">Время загрузки страницы:</p>
     </footer>
 
 
