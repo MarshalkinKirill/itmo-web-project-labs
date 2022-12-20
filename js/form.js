@@ -42,7 +42,7 @@ document.getElementById("table_add").addEventListener('click', function (event) 
     if (check_quality)
         out += '<th scope="col">Качество</th>'
     if (check_sugg)
-        out += '<th scope="col">Пожелания</th>'
+        out += '<th scope="col">Комментарии</th>'
     columnsTable_field.innerHTML = out;
     checkboxField.innerHTML = '';
     first_load = false;
