@@ -6,16 +6,8 @@
     <link href = "../Styles.css" rel="stylesheet">
     <script src = ../js/current_page.js></script>
     <script src = ../js/load_time.js></script>
-<!--    <link href="../outline-prototype/outline-prototype-lebel.css" rel="stylesheet">-->
-    <!--Plugin CSS file with desired skin-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link href="../noUiSlider/nouislider.min.css" rel="stylesheet">
 
-    <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--Plugin JavaScript file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-    <script src="../js/page_showcase.js"></script>
 </head>
 <body>
     <header>
@@ -35,18 +27,15 @@
     </header>
 
     <main>
-        <div class="demo__item">
-
-
-            <div class="demo__body">
-                <input id="example_2" type="text" name="" value="" />
+        <h2 class="text-center p-3">Комментарии</h2>
+        <div style="margin-left: 20px" >
+            <div id="loadName">
+                <img class="rounded mx-auto d-block" id="preloader" src="../imgs/load.gif" style="height: 200px; width: 200px;" >
             </div>
-
-            <div class="demo__inputs">
-                <input id="example_2_input_from" class="demo__input" value="0">
-                <input id="example_2_input_to" class="demo__input" value="0"> ← try edit this fields
+            <div class="row" id="comm_field" style="text-align: left;">
             </div>
         </div>
+        <script src="../js/comment_load.js"></script>
     </main>
     <footer>
         <p>Контактная почта:</p>

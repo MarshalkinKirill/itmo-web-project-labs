@@ -6,15 +6,14 @@
     <link href = "../Styles.css" rel="stylesheet">
     <script src = ../js/current_page.js></script>
     <script src = ../js/load_time.js></script>
+    <!--noUiSlider-->
+    <link rel="stylesheet" href="../noUiSlider/nouislider.min.css">
     <!--Plugin CSS file with desired skin-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
-
-    <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--Plugin JavaScript file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>-->
     <script src="../js/page_showcase.js"></script>
+    <link rel="stylesheet" href="../noUiSlider/range-slider.css">
 </head>
 <body>
     <header>
@@ -46,17 +45,34 @@
             </div>
             <div class="market-menu__object">
                 <div class = "market-menu__other">
-                    <a href = "Other.html">Other</a></div>
+                    <a href = "Other.html" class="active">Other</a></div>
             </div>
         </div>
-        <div id="slider" class="range-slider">
-            <div class="range-slider__body">
-                <input id="range_slider_1" type="text" name="" value="" />
-            </div>
+<!--        <div id="slider" class="range-slider">-->
+<!--            <div class="range-slider__body">-->
+<!--                <input id="range_slider_1" type="text" name="" value="" />-->
+<!--            </div>-->
 
-            <div class="range-slider__inputs">
-                <input id="range_slider_1_input_from" class="demo__input" value="0">
-                <input id="range_slider_1_input_to" class="demo__input" value="500">
+<!--            <div class="range-slider__inputs">-->
+<!--                <input id="range_slider_1_input_from" type="number" class="demo__input" value="0">-->
+<!--                <input id="range_slider_1_input_to" type="number" class="demo__input" value="500">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="filters">
+            <div class="filters__item filters-price">
+                <div class="filters-price__slider" id="range-slider"></div>
+                <div class="filters-price__inputs">
+                    <label class="filters-price__label">
+                        <span class="filters-price__text">from</span>
+                        <input type="number" min="0" max="100" placeholder="100" class="filters-price__input" id="input-0">
+                        <span class="filters-price__text">$</span>
+                    </label>
+                    <label class="filters-price__label">
+                        <span class="filters-price__text">to</span>
+                        <input type="number" min="0" max="100" placeholder="100" class="filters-price__input" id="input-1">
+                        <span class="filters-price__text">$</span>
+                    </label>
+                </div>
             </div>
         </div>
         <div class = "pop-store-menu">
@@ -150,6 +166,8 @@
                 </div>
             </div>
         </div>
+        <script src="../noUiSlider/nouislider.min.js"></script>
+        <script src="../js/range-slider.js"></script>
     </main>
 
 

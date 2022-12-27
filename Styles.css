@@ -1,3 +1,4 @@
+
 main{
     margin-top: 10px;
 }
@@ -295,6 +296,18 @@ main section h1 {
 }
 .market-menu__object div a{
 }
+.active a{
+    color: #911E42;
+}
+.market-menu__immortal a.active{
+    color: #911E42;
+}
+.market-menu__other a.active{
+    color: #911E42;
+}
+.market-menu__sets a.active{
+    color: #911E42;
+}
 .market-menu__immortal a {
     /*position: absolute;*/
     /*width: 100%;*/
@@ -405,3 +418,98 @@ main section h1 {
 .product_1{
     display: none;
 }
+/*Support page*/
+.support {
+    display: flex;
+}
+.support div{
+    margin-right: 5px;
+}
+.container1{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px;
+    background-color: #585858;
+
+    border-radius: 15px;
+    border-color: #e3e3e3;
+    border-width: 7px;
+    border-style: groove;
+
+    font-family: "Calluna", sans-serif;
+    font-size: 15px;
+    color: #F5F5DCFF;
+}
+.container1__text{
+    font-size: 20px;
+    margin-left: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #F5F5DCFF;
+}
+.container1 fieldset{
+    border: none;
+}
+.container1 fieldset > div{
+    margin-bottom: 7px;
+}
+.mb-3 input{
+    width: 100px;
+}
+.container2{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 15px;
+    border-color: #e3e3e3;
+    border-width: 7px;
+    border-style: groove;
+    background-color: #585858;
+}
+.container2__text {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #F5F5DCFF;
+}
+.container2 ul>li{
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+.container2 form > button{
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+.form-check-input{
+    color: #911E42;
+    display: initial;
+
+}
+.form-check-label{
+    font-family: "Calluna", sans-serif;
+    font-size: 15px;
+    color: #F5F5DCFF;
+}
+.container3{
+    width: 100%;
+}
+.table{
+    margin-top: 20px;
+    width: 100%;
+
+    border-radius: 15px;
+    border-color: #e3e3e3;
+    border-width: 7px;
+    border-style: groove;
+    background-color: #585858;
+
+    font-family: "Calluna", sans-serif;
+    font-size: 15px;
+    color: #F5F5DCFF;
+}
+.thead-dark{
+    text-align: left;
+}
+
+
