@@ -86,22 +86,48 @@ document.getElementById("table_add").addEventListener('click', function (event) 
 document.getElementById("appointment_add").addEventListener('click', function (event) {
     event.defaultPrevented;
     /*Adding appointment*/
-    let appointment = {
-        name: document.getElementById('name').value,
-        num: document.getElementById('num').value,
-        quality: document.getElementById('quality').value,
-        sugg: document.getElementById('sugg').value,
+    if (isNormal(document.getElementById('name').value)&isNormal(document.getElementById('num').value)&isNormal(document.getElementById('num').value)&isNormal(document.getElementById('sugg').value)){
+        let appointment = {
+            name: document.getElementById('name').value,
+            num: document.getElementById('num').value,
+            quality: document.getElementById('quality').value,
+            sugg: document.getElementById('sugg').value,
+        }
+        let appointments = [];
+        if (localStorage.getItem("appoint") !== null) {
+            appointments = JSON.parse(localStorage.getItem('appoint'));
+        }
+        appointments.push(appointment);
+        localStorage.setItem('appoint', JSON.stringify(appointments));
+        showAppointment();
+        /*Cleaning appointment form*/
+        document.getElementById("name").value = "";
+        document.getElementById("num").value = "";
+        document.getElementById("quality").value = "";
+        document.getElementById("sugg").value = "";
     }
-    let appointments = [];
-    if (localStorage.getItem("appoint") !== null) {
-        appointments = JSON.parse(localStorage.getItem('appoint'));
-    }
-    appointments.push(appointment);
-    localStorage.setItem('appoint', JSON.stringify(appointments));
-    showAppointment();
-    /*Cleaning appointment form*/
-    document.getElementById("name").value = "";
-    document.getElementById("num").value = "";
-    document.getElementById("quality").value = "";
-    document.getElementById("sugg").value = "";
+    // let appointment = {
+    //     name: document.getElementById('name').value,
+    //     num: document.getElementById('num').value,
+    //     quality: document.getElementById('quality').value,
+    //     sugg: document.getElementById('sugg').value,
+    // }
+    // let appointments = [];
+    // if (localStorage.getItem("appoint") !== null) {
+    //     appointments = JSON.parse(localStorage.getItem('appoint'));
+    // }
+    // appointments.push(appointment);
+    // localStorage.setItem('appoint', JSON.stringify(appointments));
+    // showAppointment();
+    // /*Cleaning appointment form*/
+    // document.getElementById("name").value = "";
+    // document.getElementById("num").value = "";
+    // document.getElementById("quality").value = "";
+    // document.getElementById("sugg").value = "";
 });
+
+function isNormal(str) {
+    if (str.trim() === '')
+        return false;
+    return true;
+}
